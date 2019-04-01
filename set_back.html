@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>change_back</title>
+    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+</head>
+<body>
+<div style="width: 200px;position: relative;margin: 0 auto;">
+    <h1>晚上</h1>
+    <input type="text" placeholder="晚上" id="url1"></br>
+    <img src=""id="p1"></br>
+    <h1>日出</h1>
+    <input type="text" placeholder="日出" id="url2"></br>
+    <img src=""id="p2"></br>
+    <h1>中午</h1>
+    <input type="text" placeholder="中午" id="url3"></br>
+    <img src=""id="p3"></br>
+    <h1>日落</h1>
+    <input type="text" placeholder="日落" id="url4"></br>
+    <img src=""id="p4"></br>
+    <input type="text" placeholder="vertify" id="url5"></br>
+    <input type="button" onclick="setback()" value="提交">
+</div>
+</body>
+<script>
+    $("#url1").blur(function () {
+        $("#p1").attr("src",$("#url1").val());
+    });
+    $("#url2").blur(function () {
+        $("#p2").attr("src",$("#url2").val());
+    });
+    $("#url3").blur(function () {
+        $("#p3").attr("src",$("#url3").val());
+    });
+    $("#url4").blur(function () {
+        $("#p1").attr("src",$("#url4").val());
+    });
+    $.ajax({
+        type:'get',
+        url:"http://39.108.236.127/php/api/update_background.php",
+        data:{"type":"get_theme_back"},
+        dataType: "jsonp",
+        jsonp: 'callback',
+        jsonpCallback: "callback",
+        success:function(json) {
+            var list_data=json.list.split(";");
+            var list={
+                "night":list_data[0],
+                "sunrise":list_data[1],
+                "noon":list_data[2],
+                "sunset":list_data[3],
+            }
+            $("#url1").val(list_data[0]);
+            $("#p1").attr("src",list_data[0]);
+            $("#url2").val(list_data[1]);
+            $("#p2").attr("src",list_data[1]);
+            $("#url3").val(list_data[2]);
+            $("#p3").attr("src",list_data[2]);
+            $("#url4").val(list_data[3]);
+            $("#p4").attr("src",list_data[3]);
+            var date=new Date();
+            var hour=date.getHours();
+            localStorage.setItem("back_list",JSON.stringify(list));
+            var list=eval('('+localStorage.getItem("back_list")+')');
+            set_back(hour,list);
+        },
+        error: function (XMLHttpReuqest, textStautus, errothrown) {
+            console.log(textStautus);
+            console.log(errothrown);
+        },
+    });
+    function setback() {
+        var list=$("#url1").val()+";"+$("#url2").val()+";"+$("#url3").val()+";"+$("#url4").val();
+        $.ajax({
+            type:'post',
+            url:"http://39.108.236.127/php/api/update_background.php",
+            data:{"type":"update","list":list,"vertify":$("#url5").val()},
+            success:function (data) {
+                alert("上传成功");
+            },
+            error:function (res) {
+                console.log(res);
+            }
+        });
+    }
+</script>
+<style>
+    img{
+        width: 100px;
+        height: 150px;
+    }
+    h1{
+        font-size: 15px;
+    }
+</style>
+</html>

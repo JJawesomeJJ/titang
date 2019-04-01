@@ -1,0 +1,383 @@
+*{margin: 0;padding: 0;list-style: none;}
+/*
+KISSY CSS Reset
+理念：1. reset 的目的不是清除浏览器的默认样式，这仅是部分工作。清除和重置是紧密不可分的。
+2. reset 的目的不是让默认样式在所有浏览器下一致，而是减少默认样式有可能带来的问题。
+3. reset 期望提供一套普适通用的基础样式。但没有银弹，推荐根据具体需求，裁剪和修改后再使用。
+特色：1. 适应中文；2. 基于最新主流浏览器。
+维护：玉伯<lifesinger@gmail.com>, 正淳<ragecarrier@gmail.com>
+ */
+
+/** 清除内外边距 **/
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, /* structural elements 结构元素 */
+dl, dt, dd, ul, ol, li, /* list elements 列表元素 */
+pre, /* text formatting elements 文本格式元素 */
+form, fieldset, legend, button, input, textarea, /* form elements 表单元素 */
+th, td /* table elements 表格元素 */ {
+    margin: 0;
+    padding: 0;
+}
+
+/** 设置默认字体 **/
+body,
+button, input, select, textarea /* for ie */ {
+    font: 12px/1.5 tahoma, arial, \5b8b\4f53, sans-serif;
+}
+h1, h2, h3, h4, h5, h6 { font-size: 100%; }
+address, cite, dfn, em, var { font-style: normal; } /* 将斜体扶正 */
+code, kbd, pre, samp { font-family: courier new, courier, monospace; } /* 统一等宽字体 */
+small { font-size: 12px; } /* 小于 12px 的中文很难阅读，让 small 正常化 */
+
+/** 重置列表元素 **/
+ul, ol { list-style: none; }
+
+/** 重置文本格式元素 **/
+a { text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+
+/** 重置表单元素 **/
+legend { color: #000; } /* for ie6 */
+fieldset, img { border: 0; } /* img 搭车：让链接里的 img 无边框 */
+button, input, select, textarea { font-size: 100%; } /* 使得表单元素在 ie 下能继承字体大小 */
+/* 注：optgroup 无法扶正 */
+
+/** 重置表格元素 **/
+table { border-collapse: collapse; border-spacing: 0; }
+
+/* 清除浮动 */
+.ks-clear:after, .clear:after {
+    content: '\20';
+    display: block;
+    height: 0;
+    clear: both;
+}
+.ks-clear, .clear {
+    *zoom: 1;
+}
+*{
+    margin:0px;
+    padding: 0px;
+}
+.iconfont{
+    font-size: 50px;
+}
+a,a:visited,a:link{
+    text-decoration: none;
+    color: white;
+    out-line: none;
+}
+.j-nav-bar{
+    display: none;
+    width:100%;
+    height: 55px;
+    background-color: black;
+    opacity: 0.8;
+}
+.j-loading{
+    display: none;
+    position: fixed;
+    top:0;
+    bottom: 0;
+    left:0;
+    right: 0;
+    margin: auto;
+    z-index: 999;
+    border-radius: 50px;
+    width:80px;
+    height: 80px;
+    opacity:0.8;
+    background-color: black;
+    animation:move1 1s ease-in-out normal;
+}
+.circle{
+    top:0;
+    bottom:0;
+    margin:auto;
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    border-radius: 50px;
+}
+.circle.j-1{
+    transition: 0.5s;
+    background-color: blue;
+}
+.circle.j-2{
+    transition: 0.5s;
+    background-color:green;
+}
+.circle.j-3{
+    transition: 0.5s;
+    background-color: red;
+    transform:rotate(30deg);
+}
+
+.j-loading.show{
+    animation:move 1s ease-in-out normal;
+}
+@keyframes move {
+    0%{transform: rotate(0deg);}
+    25%{transform: rotate(180deg)}
+    50%{transform: rotate(360deg)}
+    75%{transform: rotate(540deg)}
+    100%{transform: rotate(720deg)}
+}
+@keyframes move1 {
+    0%{transform: rotate(720deg);}
+    25%{transform: rotate(540deg)}
+    50%{transform: rotate(360deg)}
+    75%{transform: rotate(180deg)}
+    100%{transform: rotate(0deg)}
+}
+
+.toast {
+    display: none;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 99999;
+    margin: auto;
+    width:200px;
+    height: 30px;
+    line-height: 30px;
+    padding: 5px 10px;
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+}
+.toast_content{
+    width: auto;
+}
+.j-other{
+    position:relative;
+    float: right;
+    height: 100%;
+    width: 80px;
+    color: white;
+    line-height: 57px;
+    text-align: center;
+}
+.j-other:hover{
+    background-color: teal;border-radius: 8px;
+}
+.j-grid
+{
+    float: right;
+    margin-top: -16px;
+    display:none;
+    position: relative;
+    width: 250px;
+    height: 250px;
+    border-radius: 10px;
+    z-index: 1;
+}
+.j-grid ul{
+    display:flex;
+}
+.j-grid ul li{
+    width: 33.3%;
+    list-style: none;
+    font-size: 50px;
+    border-radius:50px;
+}
+.j-grid ul li img{
+    border-radius: 50px;
+}
+.iconfont{
+    font-size: 40px;
+}
+.j-grid .iconfont{
+    font-size: 50px;
+}
+.padding{
+    height: 80px;
+    border-radius: 50px;
+    background-color: teal;
+    text-align: center;
+    line-height: 80px;
+}
+.j-grid .iconfont:hover{
+    transition: 0.1s;
+    font-size: 62px;
+}
+.j-container
+{
+    position: relative;
+    z-index:0;
+    height: 500px;
+    width: 100%;
+    background: url("http://img.mp.itc.cn/upload/20161018/3bf24a8ceb974b0f9cf354fdb86d1271_th.jpg");
+}
+.j-nav-tail{
+    overflow: hidden;
+    text-align: center;
+    line-height:40px;
+    width: 100%;
+    height:40px;
+    background-color:white;
+    position:fixed;
+    bottom: 0px;
+}
+.j-nav-tail ul{
+    display: flex;
+}
+.j-nav-tail ul .caidan{
+    width: 25%;
+}
+.caidan .iconfont{
+    color: #2c3e50;
+}
+.j-logo{
+    position: relative;
+    float: left;
+    height: 55px;
+    width: 55px;
+}
+.j-logo img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+}
+.j-cover{
+    position: fixed;
+    top:0px;
+    width: 100%;
+    height: 100%;
+}
+.j-cover img{
+    height: 100%;
+    width:100%;
+    opacity: 0.5;
+}
+.container{
+    top:10%;
+    margin:0 auto;
+    width:60%;
+    position:relative;
+}
+#myForm{
+    width:50%;
+    margin:0 auto;
+    position:relative;
+    animation:show 0.3s ease-in normal;
+}
+@keyframes show {
+   0%{transform: scale(0.6);opacity: 0.5}
+   100%{transform: scale(1);opacity: 0.8}
+}
+#myForm fieldset{
+    position:absolute;
+    background-color:#fff;
+    border-radius:5px;
+    box-shadow:0 0 15px 1px rgba(0,0,0,0.4);
+    padding:5% 5%;
+    box-sizing:border-box;
+    opacity:0.9;
+}
+#myForm #login #register #user #password #email input ,#myForm textarea{
+    padding:15px;
+    border:2px solid #ccc;
+    border-radius:3px;
+    margin-bottom:10px;
+    width:100%;
+    color:#2c3e50;
+    font-size:13px;
+}
+#myForm #code,#code_picture{
+    width:47%;
+    height:40px;
+}
+#code_picture{
+    margin-left:4%;
+}
+#myForm #code{
+    position:relative;
+    top:-15px;
+}
+#myForm #register,#myForm #login{
+    background-color:#27AE60;
+    font-weight:bold;
+    width:100%;
+    color:white;
+    height:45px;
+    margin-top:-15px;
+}
+#myForm #man,#myForm #women{
+    position: relative;
+    padding: 0;
+    margin-left: 0px;
+    margin-bottom:0px;
+}
+.sex{
+    margin-left: 38%;
+}
+@media screen and (max-width: 690px) {
+    .container{
+        margin:0 auto;
+        width:100%;
+    }
+    #myForm{
+        width:90%;
+    }
+    #myForm fieldset{
+        padding:2% 2%;
+    }
+    .sex{
+        margin-left: 35%;
+    }
+    .iconfont{
+        font-size: 40px;
+    }
+    .j-container{
+        background: url("http://img.mp.itc.cn/upload/20161018/3bf24a8ceb974b0f9cf354fdb86d1271_th.jpg");
+    }
+    .j-other{
+        width: 54px;
+    }
+
+    .j-grid
+    {
+        display: none;
+        float: right;
+        margin-top: -14px;
+        position: relative;
+        width: 50px;
+        height: auto;
+        border-radius: 10px;
+        z-index: 10;
+    }
+    .j-grid ul{
+        display:inline-block;
+    }
+    .j-grid ul li{
+        width: 100%;
+        list-style: none;
+        font-size: 34px;
+        border-radius:50px;
+    }
+    .j-grid ul li img{
+        border-radius: 50px;
+    }
+    .j-grid .iconfont{
+        font-size: 34px;
+    }
+    .padding{
+        margin-top: 2px;
+        height: 48px;
+        border-radius: 50px;
+        background-color: teal;
+        text-align: center;
+        line-height: 48px;
+        width: 50px;
+    }
+    .j-grid .iconfont:hover{
+        transition: 0.5s;
+        font-size:40px;
+    }
+
+}

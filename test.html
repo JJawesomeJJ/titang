@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="http://api.map.baidu.com/api?v=1.4" type="text/javascript"></script>
+    <title>Title</title>
+</head>
+<style>
+    .show{
+       animation: show ease-in-out 0.3s;
+    }
+    @keyframes show {
+        0%{color: red}
+        100%{color: #00aaff}
+    }
+</style>
+<body>
+<div class="container">
+    <div class="show" style="width: 100px;height: 100px;background-color: #00aaff;">{{test}}</div>
+    <p>{{cure}}</p>
+</div>
+</body>
+<script>
+    var redpacket={"money":100.00,"time":10};
+    function get_rand_money() {
+        if(redpacket.time==1){
+            return redpacket.money.toFixed(2);
+            redpacket.time=0;
+        }
+        else{
+            var min=0.01;
+            var max=redpacket.money/redpacket.time*2;
+            var money=(Math.random()*max).toFixed(2);
+            money=money<0.01?0.01:money;
+            redpacket.money=redpacket.money-money;
+            redpacket.time=redpacket.time-1;
+            return money;
+        }
+    }
+    var all=0.00;
+    window.list=[];
+    for(var i=0;i<10;i++)
+    {
+        var num=get_rand_money();
+        list.push(num);
+        all=all+num;
+        console.log(num);
+    }
+    var oringin=document.querySelector(".container").innerHTML;
+    String.prototype.replaceAll = function (searchValue, replaceValue) {
+        var regExp = new RegExp(searchValue, "g");
+        return this.replace(regExp, replaceValue);
+    }
+    window.data={
+        "test":"你是瓜娃子",
+        "cure":"cure you anywhere"
+    };
+    //observer(data);
+    //compile(data);
+    function observer(data) {
+        if(!data ||typeof data!=='object'){
+            return;
+        }
+        Object.keys(data).forEach(function (key) {
+            define_reactive(data,key,data[key])
+        })
+    }
+    function define_reactive(data,key,val) {
+        observer(val);
+        Object.defineProperty(data,key,{
+            enumerable:true,
+            configurable:false,
+            get:function () {
+                return val;
+            },
+            set:function (newval) {
+                if(newval!==val)
+                {
+                    val=newval;
+                    console.log("change");
+                    compile(data)
+                }
+            }
+        });
+    }
+    function compile(data) {
+        var all=oringin;
+        var reg=/{{(.*?)}}/g;
+        var result;
+        window.change=[];
+        while((result=reg.exec(all))!=null)
+        {
+            if(change.indexOf(result[1])==-1)
+            {
+                change.push(result[1]);
+            }
+        }
+        for(var i of change)
+        {
+            all=all.replaceAll(i,data[i]);
+        }
+        document.querySelector(".container").innerHTML=all;
+    }
+</script>
+</html>
