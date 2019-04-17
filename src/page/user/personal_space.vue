@@ -108,15 +108,6 @@
             is_exist() {
                this.head_img=localStorage.getItem("head_img");
             },
-            exit_login() {
-                this.setcookie('', '', -1);
-                +"path=/";
-                this.$http.get("http://39.108.236.127/php/public/index.php/user/logout").then((res) => {
-                    window.location.reload();
-                }).catch((res) => {
-                    window.location.reload();
-                });
-            },
             post_code(){
                 var h1=document.getElementById("h1");
                 var h2=document.getElementById("h2");

@@ -48,12 +48,17 @@
                     this.toast("用户名或密码不可为空");
                     return false;
                 }
+                if(this.code==null&&this.code.length==0)
+                {
+                    this.toast("请输入验证码！");
+                    return;
+                }
                 var send_data = {"code": code, "name": x, "password": y}
                 this.$http.post("http://39.108.236.127/php/public/index.php/user/login",
                     {
                         code:this.code,
                         name:this.x,
-                        password:this.y
+                        password:this.SHA256(this.y)
                     },
                     {emulateJSON: true}
                 )

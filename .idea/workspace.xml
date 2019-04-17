@@ -2,382 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="66fda679-3123-4842-89a8-bdbb8b60294e" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.babelrc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/webpack.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/build.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/webpack.base.conf.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/webpack.dev.conf.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/webpack.prod.conf.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/Gruntfile.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/dist/css/mui.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/dist/css/mui.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/dist/fonts/mui.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/dist/js/mui.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/dist/js/mui.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/examples/hello-mui/.project" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/examples/hello-mui/css/app.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/examples/hello-mui/css/feedback.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/examples/hello-mui/css/icons-extra.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/examples/hello-mui/css/mui.dtpicker.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/examples/hello-mui/css/mui.imageviewer.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/examples/hello-mui/css/mui.indexedlist.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/examples/hello-mui/css/mui.listpicker.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/examples/hello-mui/css/mui.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/examples/hello-mui/css/mui.picker.all.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/examples/hello-mui/css/mui.picker.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/examples/hello-mui/css/mui.picker.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/examples/hello-mui/css/mui.poppicker.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/examples/hello-mui/examples/accordion.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/examples/hello-mui/examples/actionsheet-plus.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/examples/hello-mui/examples/actionsheet.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/examples/hello-mui/examples/ad.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/examples/hello-mui/examples/ajax.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/examples/hello-mui/examples/badges.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/examples/hello-mui/examples/beecloud.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/examples/hello-mui/examples/best-practices/list-to-detail/detail.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/examples/hello-mui/examples/best-practices/list-to-detail/list-to-detail.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/examples/hello-mui/examples/best-practices/list-to-detail/listview.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/examples/hello-mui/examples/best-practices/list-to-detail/vue.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/examples/hello-mui/examples/buttons-with-badges.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/examples/hello-mui/examples/buttons-with-block.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/examples/hello-mui/examples/buttons-with-icons.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/examples/hello-mui/examples/buttons-with-loading.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/examples/hello-mui/examples/buttons.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/examples/hello-mui/examples/card.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/examples/hello-mui/examples/checkbox.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/examples/hello-mui/examples/clouddb_wilddog.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/examples/hello-mui/examples/date.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/examples/hello-mui/examples/dialog.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/examples/hello-mui/examples/dtpicker.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/examples/hello-mui/examples/echarts.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/examples/hello-mui/examples/feedback.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/examples/hello-mui/examples/grid-default.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/examples/hello-mui/examples/grid-pagination.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/examples/hello-mui/examples/guide.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/examples/hello-mui/examples/icons-extra.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/examples/hello-mui/examples/icons.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/examples/hello-mui/examples/im-chat.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/examples/hello-mui/examples/imageviewer-native.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/examples/hello-mui/examples/imageviewer.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/examples/hello-mui/examples/indexed-list-select.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/examples/hello-mui/examples/indexed-list.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/examples/hello-mui/examples/info.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/examples/hello-mui/examples/input.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/examples/hello-mui/examples/lazyload-image.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/examples/hello-mui/examples/list-triplex-row.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/examples/hello-mui/examples/list-with-input.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/examples/hello-mui/examples/locker-dom.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/examples/hello-mui/examples/login.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/examples/hello-mui/examples/media-list.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/examples/hello-mui/examples/message-bottom.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/examples/hello-mui/examples/modals.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/examples/hello-mui/examples/nav-nativeObj.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/examples/hello-mui/examples/nav.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/examples/hello-mui/examples/nav_transparent.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/examples/hello-mui/examples/nav_transparent_native.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/examples/hello-mui/examples/numbox.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/examples/hello-mui/examples/offcanvas-drag-down.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/examples/hello-mui/examples/offcanvas-drag-left-plus-main.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/examples/hello-mui/examples/offcanvas-drag-left-plus-menu.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/examples/hello-mui/examples/offcanvas-drag-left.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/examples/hello-mui/examples/offcanvas-drag-right-plus-main.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/examples/hello-mui/examples/offcanvas-drag-right-plus-menu.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/examples/hello-mui/examples/offcanvas-drag-right.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/examples/hello-mui/examples/pagination.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/examples/hello-mui/examples/picker.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/examples/hello-mui/examples/popovers.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/examples/hello-mui/examples/progressbar.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/examples/hello-mui/examples/pullrefresh.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/examples/hello-mui/examples/pullrefresh_main.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/examples/hello-mui/examples/pullrefresh_sub.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/examples/hello-mui/examples/pullrefresh_with_tab.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/examples/hello-mui/examples/radio.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/examples/hello-mui/examples/range.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/examples/hello-mui/examples/setting.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/examples/hello-mui/examples/slider-default.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/examples/hello-mui/examples/slider-native.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/examples/hello-mui/examples/slider-table-default.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/examples/hello-mui/examples/slider-table-pagination.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/examples/hello-mui/examples/slider-with-title.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/examples/hello-mui/examples/switches.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/examples/hello-mui/examples/tab-top-subpage-1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/examples/hello-mui/examples/tab-top-subpage-2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/examples/hello-mui/examples/tab-top-subpage-3.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/examples/hello-mui/examples/tab-top-subpage-4.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/examples/hello-mui/examples/tab-top-subpage-5.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/examples/hello-mui/examples/tab-top-webview-main.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/examples/hello-mui/examples/tab-vertical-scroll.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/examples/hello-mui/examples/tab-webview-main.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/examples/hello-mui/examples/tab-webview-subpage-about.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/examples/hello-mui/examples/tab-webview-subpage-chat.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/examples/hello-mui/examples/tab-webview-subpage-contact.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/examples/hello-mui/examples/tab-webview-subpage-setting.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/examples/hello-mui/examples/tab-with-segmented-control-vertical.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/examples/hello-mui/examples/tab-with-segmented-control.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/examples/hello-mui/examples/tab-with-viewpagerindicator.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/examples/hello-mui/examples/tabbar-labels-only.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/examples/hello-mui/examples/tabbar-with-submenus.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/examples/hello-mui/examples/tabbar.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/examples/hello-mui/examples/tableviews-with-badges.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/examples/hello-mui/examples/tableviews-with-collapses.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/examples/hello-mui/examples/tableviews-with-swipe.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/examples/hello-mui/examples/tableviews.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/examples/hello-mui/examples/typography.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/examples/hello-mui/fonts/mui-icons-extra.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/examples/hello-mui/fonts/mui.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/examples/hello-mui/images/60x60.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/examples/hello-mui/images/cbd.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/examples/hello-mui/images/login-1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/examples/hello-mui/images/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/examples/hello-mui/images/muwu.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/examples/hello-mui/images/qrcode.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/examples/hello-mui/images/shuijiao.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/examples/hello-mui/images/yuantiao.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/examples/hello-mui/index-menu.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/examples/hello-mui/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/examples/hello-mui/js/95516.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/examples/hello-mui/js/arttmpl.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/examples/hello-mui/js/beecloud.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/examples/hello-mui/js/city.data-3.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/examples/hello-mui/js/city.data.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/examples/hello-mui/js/feedback.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/examples/hello-mui/js/mui.dtpicker.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/examples/hello-mui/js/mui.imageViewer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/examples/hello-mui/js/mui.indexedlist.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/examples/hello-mui/js/mui.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/examples/hello-mui/js/mui.lazyload.img.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/examples/hello-mui/js/mui.lazyload.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/examples/hello-mui/js/mui.listpicker.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/examples/hello-mui/js/mui.locker.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/examples/hello-mui/js/mui.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/examples/hello-mui/js/mui.picker.all.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/examples/hello-mui/js/mui.picker.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/examples/hello-mui/js/mui.picker.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/examples/hello-mui/js/mui.poppicker.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/examples/hello-mui/js/mui.previewimage.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/examples/hello-mui/js/mui.pullToRefresh.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/examples/hello-mui/js/mui.pullToRefresh.material.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/examples/hello-mui/js/mui.view.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/examples/hello-mui/js/mui.zoom.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/examples/hello-mui/js/update.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/examples/hello-mui/js/webviewGroup.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/examples/hello-mui/libs/echarts-all.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/examples/hello-mui/manifest.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/examples/login/.project" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/examples/login/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/examples/login/css/feedback-page.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/examples/login/css/mui.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/examples/login/css/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/examples/login/fonts/mui.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/examples/login/forget_password.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/examples/login/images/iconfont-tianjia.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/examples/login/images/qihoo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/examples/login/images/qq.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/examples/login/images/sinaweibo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/examples/login/images/user-photo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/examples/login/images/weixin.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/examples/login/js/app.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/examples/login/js/feedback-page.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/examples/login/js/feedback.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/examples/login/js/mui.enterfocus.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/examples/login/js/mui.locker.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/examples/login/js/mui.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/examples/login/js/mui.view.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/examples/login/libs/easymob-webim-sdk/easemob.im-1.0.5.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/examples/login/libs/easymob-webim-sdk/jquery-1.11.1.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/examples/login/libs/easymob-webim-sdk/json2.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/examples/login/libs/easymob-webim-sdk/quickstart.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/examples/login/libs/easymob-webim-sdk/strophe-custom-2.0.0.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/examples/login/login.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/examples/login/main.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/examples/login/manifest.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/examples/login/reg.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/examples/login/setting.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/examples/login/unlock.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/examples/nativeTab/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/examples/nativeTab/css/mui.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/examples/nativeTab/css/mui.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/examples/nativeTab/fonts/iconfont.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/examples/nativeTab/fonts/mui.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/examples/nativeTab/html/new-webview.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/examples/nativeTab/html/tab-webview-subpage-chat.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/examples/nativeTab/html/tab-webview-subpage-contact.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/examples/nativeTab/images/60x60.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/examples/nativeTab/images/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/examples/nativeTab/images/ma.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/examples/nativeTab/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/examples/nativeTab/js/mui.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/examples/nativeTab/js/mui.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/examples/nativeTab/js/util.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/examples/nativeTab/manifest.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/examples/nativeTab/unpackage/.confirmed_dependencies" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/examples/nativeTab/unpackage/.dependencies" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/fonts/mui.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/grunt/mui-namespace-generator.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/js/actions.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/js/ajax.plugin.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/js/input.plugin.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/js/modals.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/js/mui.active.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/js/mui.ajax.5+.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/js/mui.ajax.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/js/mui.animation.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/js/mui.animationframe.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/js/mui.back.5+.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/js/mui.back.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/js/mui.button.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/js/mui.class.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/js/mui.class.scroll.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/js/mui.class.scroll.pullrefresh.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/js/mui.class.scroll.slider.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/js/mui.detect.5+.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/js/mui.detect.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/js/mui.dialog.alert.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/js/mui.dialog.confirm.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/js/mui.dialog.prompt.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/js/mui.dialog.toast.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/js/mui.event.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/js/mui.fixed.animation.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/js/mui.fixed.bind.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/js/mui.fixed.classlist.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/js/mui.fixed.fastclick.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/js/mui.fixed.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/js/mui.fixed.keyboard.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/js/mui.gestures.drag.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/js/mui.gestures.flick.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/js/mui.gestures.hold.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/js/mui.gestures.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/js/mui.gestures.longtap.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/js/mui.gestures.pinch.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/js/mui.gestures.swipe.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/js/mui.gestures.tap.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/js/mui.init.5+.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/js/mui.init.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/js/mui.init.pullrefresh.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/js/mui.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/js/mui.jsonp.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/js/mui.layout.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/js/mui.namespace.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/js/mui.number.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/js/mui.offcanvas.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/js/mui.popup.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/js/mui.progressbar.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/js/mui.pullrefresh.5+.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/js/mui.pullrefresh.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/js/mui.target.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/js/mui.transparent.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/js/popovers.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/js/segmented-controllers.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/js/sliders.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/js/switches.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/js/tableviews.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/mui_snippets.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/plugin/picker/css/mui.dtpicker.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/plugin/picker/css/mui.picker.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/plugin/picker/css/mui.poppicker.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/plugin/picker/dist/css/mui.picker.all.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/plugin/picker/dist/css/mui.picker.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/plugin/picker/dist/js/mui.picker.all.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/plugin/picker/dist/js/mui.picker.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/plugin/picker/gulpfile.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/plugin/picker/js/mui.dtpicker.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/plugin/picker/js/mui.picker.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/plugin/picker/js/mui.poppicker.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/plugin/picker/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/plugin/share/plusShare.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/sass/badges.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/sass/bars.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/sass/base.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/sass/buttons.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/sass/cards.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/sass/forms.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/sass/fullscreen.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/sass/grid.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/sass/hack.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/sass/icon.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/sass/iframe.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/sass/iscroll.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/sass/loadings.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/sass/mixins.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/sass/modals.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/sass/mui.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/sass/normalize.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/sass/number.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/sass/off-canvas.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/sass/os.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/sass/pagination.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/sass/popovers.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/sass/popup.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/sass/progressbar.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/sass/pullrefreshs.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/sass/push.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/sass/scroll.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/sass/segmented-controls.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/sass/slider-cell.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/sass/sliders.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/sass/switches.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/sass/table-views.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/sass/toast.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/sass/type.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/sass/variables.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/template/feedback/css/feedback.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/template/feedback/feedback.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/template/feedback/js/feedback.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mui-master/template/feedback/readme.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/postcss.config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/App.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/js/common.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/js/variate.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/page/chat/chat.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/page/chat/chat_to.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/page/home/home.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/page/news/news_content.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/page/news/news_list.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/page/survey/my_survey.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/page/survey/survey_edit_page.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/page/user/login1.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/page/user/personal_space.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/page/user/register.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/page/user/user.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/router/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/store/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/css/icon" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/css/mui.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/css/mui.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/font-icon/demo.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/font-icon/demo_fontclass.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/font-icon/demo_symbol.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/font-icon/demo_unicode.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/font-icon/iconfont.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/font-icon/iconfont.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/font-icon/iconfont.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/font-icon/iconfont.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/font-icon/iconfont.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/font-icon/iconfont.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/fonts/mui.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/j-js.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/mui.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/mui.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webpack" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/websocket.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/common.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/common.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/page/chat/chat.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/chat/chat.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/page/chat/chat_to.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/chat/chat_to.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/page/news/news_content.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/news/news_content.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/page/survey/my_survey.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/survey/my_survey.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/page/survey/survey_edit_page.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/survey/survey_edit_page.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/page/user/login1.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/user/login1.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/page/user/personal_space.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/user/personal_space.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/static.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/static.css" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -391,28 +26,24 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/page/survey/my_survey.vue">
+        <entry file="file://$PROJECT_DIR$/src/page/news/news_content.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="893">
-              <caret line="47" column="12" selection-start-line="47" selection-start-column="12" selection-end-line="47" selection-end-column="12" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/page/survey/survey.vue">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="608">
-              <caret line="32" column="24" selection-start-line="32" selection-start-column="24" selection-end-line="32" selection-end-column="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/page/survey/survey_edit_page.vue">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2204">
-              <caret line="116" column="14" selection-start-line="116" selection-start-column="14" selection-end-line="116" selection-end-column="14" />
+            <state relative-caret-position="6118">
+              <caret line="322" column="38" selection-start-line="322" selection-start-column="38" selection-end-line="322" selection-end-column="38" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#li#0;n#div#2;n#div#0;n#template#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#h1#0;n#span#0;n#div#0;n#li#0;n#div#2;n#div#0;n#template#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#span#0;n#div#0;n#li#0;n#div#2;n#div#0;n#template#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#2;n#span#0;n#div#0;n#li#0;n#div#2;n#div#0;n#template#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#h1#0;n#div#0;n#li#0;n#div#2;n#div#0;n#template#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#p#0;n#div#0;n#li#0;n#div#2;n#div#0;n#template#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#li#0;n#div#2;n#div#0;n#template#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#h1#0;n#div#0;n#div#0;n#li#0;n#div#2;n#div#0;n#template#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#h1#1;n#div#0;n#div#0;n#li#0;n#div#2;n#div#0;n#template#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#5;n#div#0;n#template#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#div#5;n#div#0;n#template#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#6;n#div#0;n#template#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -420,26 +51,79 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/js/common.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="421">
-              <caret line="366" column="45" selection-start-line="366" selection-start-column="45" selection-end-line="366" selection-end-column="45" />
+            <state relative-caret-position="494">
+              <caret line="26" column="4" selection-start-line="26" selection-start-column="4" selection-end-line="26" selection-end-column="4" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/js/variate.vue">
+        <entry file="file://$PROJECT_DIR$/src/page/news/news_list.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="114">
-              <caret line="6" column="9" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="9" />
+            <state relative-caret-position="1995">
+              <caret line="105" column="31" selection-start-line="105" selection-start-column="31" selection-end-line="105" selection-end-column="31" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/page/chat/chat.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="174">
-              <caret line="74" column="74" selection-start-line="74" selection-start-column="51" selection-end-line="74" selection-end-column="74" />
+            <state relative-caret-position="307">
+              <caret line="22" column="13" lean-forward="true" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+              <folding>
+                <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/page/survey/my_survey.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2033">
+              <caret line="107" column="31" selection-start-line="107" selection-start-column="31" selection-end-line="107" selection-end-column="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/page/user/register.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="247">
+              <caret line="13" column="77" selection-start-line="13" selection-start-column="77" selection-end-line="13" selection-end-column="77" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/page/chat/chat_to.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="342">
+              <caret line="18" column="38" selection-start-line="18" selection-start-column="38" selection-end-line="18" selection-end-column="38" />
+              <folding>
+                <element signature="n#style#0;n#h1#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#router-link#1;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#2;n#div#0;n#div#1;n#li#0;n#div#2;n#div#0;n#template#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#input#0;n#div#3;n#div#0;n#template#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#3;n#div#0;n#template#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#input#1;n#div#3;n#div#0;n#template#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#4;n#div#0;n#template#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#4;n#div#0;n#template#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#4;n#div#0;n#template#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#input#0;n#div#0;n#div#4;n#div#0;n#template#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#5;n#div#0;n#template#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#div#5;n#div#0;n#template#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/store/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="456">
+              <caret line="25" column="31" selection-start-line="25" selection-start-column="31" selection-end-line="25" selection-end-column="31" />
             </state>
           </provider>
         </entry>
@@ -447,8 +131,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/page/user/user.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1178">
-              <caret line="74" column="25" selection-start-line="74" selection-start-column="25" selection-end-line="74" selection-end-column="25" />
+            <state relative-caret-position="1349">
+              <caret line="71" column="10" selection-start-line="71" selection-start-column="10" selection-end-line="71" selection-end-column="10" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#router-link#0;n#div#1;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#h1#0;n#div#0;n#div#0;n#router-link#0;n#div#1;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
@@ -460,33 +144,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/page/user/personal_space.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="179">
-              <caret line="118" column="14" selection-start-line="118" selection-start-column="14" selection-end-line="118" selection-end-column="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/page/chat/chat_to.vue">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="307">
-              <caret line="202" column="14" selection-start-line="202" selection-start-column="14" selection-end-line="202" selection-end-column="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/page/user/login1.vue">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1118">
-              <caret line="31" column="46" selection-start-line="31" selection-start-column="46" selection-end-line="31" selection-end-column="46" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#fieldset#0;n#form#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#ul#0;n#div#0;n#fieldset#0;n#form#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#li#0;n#ul#0;n#div#0;n#fieldset#0;n#form#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#li#1;n#ul#0;n#div#0;n#fieldset#0;n#form#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="3002">
+              <caret line="158" column="21" selection-start-line="158" selection-start-column="21" selection-end-line="158" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -498,30 +157,13 @@
       <list>
         <option value="CSS File" />
         <option value="Vue Single File Component" />
-        <option value="JavaScript File" />
         <option value="HTML File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>111.30.101.206</find>
-      <find>scroll_button()</find>
-      <find>this.getCookie</find>
-      <find>111.230.101.206</find>
-      <find>websocket</find>
-      <find>online_list</find>
-      <find>setcookie</find>
-      <find>39.108.236.127/tool/index.html</find>
-      <find>href</find>
-      <find>39.108.236.127</find>
-      <find>list</find>
-      <find>set</find>
-      <find>vh</find>
-      <find>op</find>
-      <find>zuojiantou</find>
-      <find>line-height: 30px</find>
-      <find>margin-top: 1re</find>
       <find>j-c</find>
       <find>&amp;nbsp;</find>
       <find>&lt;label&gt;</find>
@@ -534,6 +176,24 @@
       <find>load</find>
       <find>.j-container</find>
       <find>getCoo</find>
+      <find>exit</find>
+      <find>login</find>
+      <find>toast</find>
+      <find>exit_login</find>
+      <find>post</find>
+      <find>input</find>
+      <find>get_content</find>
+      <find>json</find>
+      <find>get_comment</find>
+      <find>time</find>
+      <find>取消</find>
+      <find>reply</find>
+      <find>this.url</find>
+      <find>head</find>
+      <find>i.message</find>
+      <find>get_</find>
+      <find>get_head_img</find>
+      <find>alert</find>
     </findStrings>
     <replaceStrings>
       <replace>http://39.108.236.127</replace>
@@ -544,6 +204,8 @@
       <replace>&lt;/h2&gt;</replace>
       <replace>system_data.source</replace>
       <replace>body</replace>
+      <replace>i</replace>
+      <replace>console.log</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -567,7 +229,6 @@
         <option value="$PROJECT_DIR$/src/common.vue" />
         <option value="$PROJECT_DIR$/src/page/news/INDEX.html" />
         <option value="$PROJECT_DIR$/static/js/websocket.js" />
-        <option value="$PROJECT_DIR$/src/store/index.js" />
         <option value="$PROJECT_DIR$/src/try.html" />
         <option value="$PROJECT_DIR$/src/index.html" />
         <option value="$PROJECT_DIR$/src/page/user/asp.net_7.html" />
@@ -584,31 +245,32 @@
         <option value="$PROJECT_DIR$/static/css/dsfsd.html" />
         <option value="$PROJECT_DIR$/test.html" />
         <option value="$PROJECT_DIR$/src/page/survey/survey.vue" />
-        <option value="$PROJECT_DIR$/src/page/chat/chat.vue" />
         <option value="$PROJECT_DIR$/static/js/j-js.js" />
-        <option value="$PROJECT_DIR$/static/css/static.css" />
         <option value="$PROJECT_DIR$/src/page/news/news_list.vue" />
         <option value="$PROJECT_DIR$/static/js/post_survey_info.js" />
-        <option value="$PROJECT_DIR$/src/page/survey/survey_edit_page.vue" />
         <option value="$PROJECT_DIR$/build/webpack.base.conf.js" />
         <option value="$PROJECT_DIR$/public/index.html" />
         <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/src/page/survey/my_survey.vue" />
         <option value="$PROJECT_DIR$/src/page/user/user.vue" />
         <option value="$PROJECT_DIR$/src/page/user/register.vue" />
         <option value="$PROJECT_DIR$/src/main.js" />
+        <option value="$PROJECT_DIR$/test.js" />
+        <option value="$PROJECT_DIR$/src/page/user/personal_space.vue" />
+        <option value="$PROJECT_DIR$/static/css/static.css" />
         <option value="$PROJECT_DIR$/src/page/news/news_content.vue" />
+        <option value="$PROJECT_DIR$/src/page/chat/chat_to.vue" />
+        <option value="$PROJECT_DIR$/src/page/survey/my_survey.vue" />
+        <option value="$PROJECT_DIR$/src/page/survey/survey_edit_page.vue" />
         <option value="$PROJECT_DIR$/src/page/user/login1.vue" />
         <option value="$PROJECT_DIR$/src/js/common.js" />
-        <option value="$PROJECT_DIR$/src/page/user/personal_space.vue" />
-        <option value="$PROJECT_DIR$/src/page/chat/chat_to.vue" />
+        <option value="$PROJECT_DIR$/src/store/index.js" />
+        <option value="$PROJECT_DIR$/src/page/chat/chat.vue" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-5" />
-    <option name="y" value="10" />
-    <option name="width" value="980" />
+    <option name="x" value="750" />
+    <option name="width" value="1030" />
     <option name="height" value="1050" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -617,6 +279,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -653,13 +316,32 @@
               <item name="webpack-master" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="page" type="462c0819:PsiDirectoryNode" />
+              <item name="news" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="webpack-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="webpack-master" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="page" type="462c0819:PsiDirectoryNode" />
+              <item name="survey" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="webpack-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="webpack-master" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="page" type="462c0819:PsiDirectoryNode" />
               <item name="user" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="webpack-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="webpack-master" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="store" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -886,11 +568,23 @@
       <workItem from="1554116154683" duration="332000" />
       <workItem from="1554116750947" duration="3120000" />
       <workItem from="1554121826782" duration="3314000" />
+      <workItem from="1554176126942" duration="865000" />
+      <workItem from="1554188733769" duration="12700000" />
+      <workItem from="1554270396441" duration="2865000" />
+      <workItem from="1554295598468" duration="7725000" />
+      <workItem from="1554346852156" duration="7016000" />
+      <workItem from="1554367110076" duration="1354000" />
+      <workItem from="1554386089593" duration="15101000" />
+      <workItem from="1554457349371" duration="9881000" />
+      <workItem from="1554474055508" duration="456000" />
+      <workItem from="1554474859042" duration="49493000" />
+      <workItem from="1554711979355" duration="17185000" />
+      <workItem from="1555247702348" duration="30000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1033884000" />
+    <option name="totallyTimeSpent" value="1158752000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -903,8 +597,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15852048" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13870542" />
       <window_info id="Structure" order="1" weight="0.24829601" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -914,11 +609,11 @@
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.4993395" weight="0.3286119" />
+      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49867898" weight="0.3286119" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5627477" side_tool="true" visible="true" weight="0.27478755" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5706737" side_tool="true" visible="true" weight="0.27478755" />
       <window_info anchor="bottom" id="Version Control" order="9" sideWeight="0.49788582" weight="0.32842582" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" sideWeight="0.4372523" visible="true" weight="0.27478755" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" sideWeight="0.4293263" visible="true" weight="0.27478755" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -948,9 +643,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/mail.html" />
-    <entry file="file://$PROJECT_DIR$/src/page/user/asp.net_7.html" />
-    <entry file="file://$PROJECT_DIR$/static/js/websocket.js" />
     <entry file="file://$PROJECT_DIR$/static/js/static.css" />
     <entry file="file://$PROJECT_DIR$/static/js/mui.min.js">
       <provider selected="true" editor-type-id="text-editor" />
@@ -988,45 +680,10 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/static/css/dsfsd.html" />
-    <entry file="file://$PROJECT_DIR$/src/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="14" column="12" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="690">
           <caret line="30" column="25" selection-start-line="30" selection-start-column="25" selection-end-line="30" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/store/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="7" selection-start-column="7" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/router/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="11" column="22" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/css/static.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5106">
-          <caret line="222" column="100" selection-start-line="222" selection-start-column="100" selection-end-line="222" selection-end-column="100" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/page/home/home.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="562">
-          <caret line="262" column="17" selection-start-line="262" selection-start-column="17" selection-end-line="262" selection-end-column="17" />
         </state>
       </provider>
     </entry>
@@ -1065,15 +722,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/build/static/js/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/build/webpack.base.conf.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="299">
@@ -1105,38 +753,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/page/user/register.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="13" column="77" selection-start-line="13" selection-start-column="77" selection-end-line="13" selection-end-column="77" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/page/news/news_list.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2242">
-          <caret line="142" column="18" selection-start-line="142" selection-start-column="18" selection-end-line="142" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="23" column="34" selection-start-line="23" selection-start-column="34" selection-end-line="23" selection-end-column="34" />
-          <folding>
-            <element signature="e#0#22#0" expanded="true" />
-            <element signature="e#776#817#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="24" column="47" selection-start-line="24" selection-start-column="47" selection-end-line="24" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/App.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="304">
@@ -1144,49 +760,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/webpack/src/page/news/news_content.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3667">
-          <caret line="193" column="12" selection-start-line="193" selection-start-column="12" selection-end-line="193" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/webpack/src/page/news/news_content.vue" />
     <entry file="file://$PROJECT_DIR$/config/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-187">
           <caret line="16" selection-start-line="16" selection-end-line="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/page/news/news_content.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3534">
-          <caret line="186" column="13" selection-start-line="186" selection-start-column="13" selection-end-line="186" selection-end-column="13" />
-          <folding>
-            <element signature="n#style#0;n#div#5;n#div#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#div#5;n#div#0;n#template#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/page/survey/my_survey.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="893">
-          <caret line="47" column="12" selection-start-line="47" selection-start-column="12" selection-end-line="47" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/page/survey/survey.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="608">
-          <caret line="32" column="24" selection-start-line="32" selection-start-column="24" selection-end-line="32" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/page/survey/survey_edit_page.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2204">
-          <caret line="116" column="14" selection-start-line="116" selection-start-column="14" selection-end-line="116" selection-end-column="14" />
         </state>
       </provider>
     </entry>
@@ -1197,6 +775,76 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/static/css/static.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5681">
+          <caret line="299" selection-start-line="299" selection-end-line="299" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="331">
+          <caret line="45" column="26" selection-start-line="45" selection-start-column="26" selection-end-line="45" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/static/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="1" column="25734" selection-start-line="1" selection-start-column="25734" selection-end-line="1" selection-end-column="25734" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/static/js/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="1" column="20122" selection-start-line="1" selection-start-column="20122" selection-end-line="1" selection-end-column="20122" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="23" column="34" selection-start-line="23" selection-start-column="34" selection-end-line="23" selection-end-column="34" />
+          <folding>
+            <element signature="e#0#22#0" expanded="true" />
+            <element signature="e#776#817#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="14" column="12" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/router/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="11" column="22" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="17" column="21" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/page/home/home.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4978">
+          <caret line="262" column="17" selection-start-line="262" selection-start-column="17" selection-end-line="262" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/js/variate.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="114">
@@ -1204,28 +852,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/page/user/user.vue">
+    <entry file="file://$PROJECT_DIR$/src/page/survey/survey.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1178">
-          <caret line="74" column="25" selection-start-line="74" selection-start-column="25" selection-end-line="74" selection-end-column="25" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#router-link#0;n#div#1;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h1#0;n#div#0;n#div#0;n#router-link#0;n#div#1;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="217">
+          <caret line="32" column="24" selection-start-line="32" selection-start-column="24" selection-end-line="32" selection-end-column="24" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/page/user/personal_space.vue">
+    <entry file="file://$PROJECT_DIR$/src/page/survey/survey_edit_page.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="179">
-          <caret line="118" column="14" selection-start-line="118" selection-start-column="14" selection-end-line="118" selection-end-column="14" />
+        <state relative-caret-position="-410">
+          <caret line="161" column="31" selection-start-line="161" selection-start-column="31" selection-end-line="161" selection-end-column="31" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/page/user/login1.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1118">
-          <caret line="31" column="46" selection-start-line="31" selection-start-column="46" selection-end-line="31" selection-end-column="46" />
+        <state relative-caret-position="296">
+          <caret line="53" column="27" selection-start-line="53" selection-start-column="27" selection-end-line="53" selection-end-column="27" />
           <folding>
             <element signature="n#style#0;n#div#0;n#template#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#fieldset#0;n#form#0;n#div#0;n#template#0;n#!!top" expanded="true" />
@@ -1236,24 +880,115 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/common.js">
+    <entry file="file://$PROJECT_DIR$/mui-master/examples/hello-mui/libs/echarts-all.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="421">
-          <caret line="366" column="45" selection-start-line="366" selection-start-column="45" selection-end-line="366" selection-end-column="45" />
+        <state relative-caret-position="19">
+          <caret line="7" column="1834" selection-start-line="7" selection-start-column="1834" selection-end-line="7" selection-end-column="1834" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/page/chat/chat.vue">
+    <entry file="file://$PROJECT_DIR$/src/page/news/news_content.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="174">
-          <caret line="74" column="74" selection-start-line="74" selection-start-column="51" selection-end-line="74" selection-end-column="74" />
+        <state relative-caret-position="6118">
+          <caret line="322" column="38" selection-start-line="322" selection-start-column="38" selection-end-line="322" selection-end-column="38" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#li#0;n#div#2;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h1#0;n#span#0;n#div#0;n#li#0;n#div#2;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#span#0;n#div#0;n#li#0;n#div#2;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#2;n#span#0;n#div#0;n#li#0;n#div#2;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h1#0;n#div#0;n#li#0;n#div#2;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#div#0;n#li#0;n#div#2;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#li#0;n#div#2;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h1#0;n#div#0;n#div#0;n#li#0;n#div#2;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h1#1;n#div#0;n#div#0;n#li#0;n#div#2;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#5;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#div#5;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#6;n#div#0;n#template#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/common.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="494">
+          <caret line="26" column="4" selection-start-line="26" selection-start-column="4" selection-end-line="26" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/page/news/news_list.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1995">
+          <caret line="105" column="31" selection-start-line="105" selection-start-column="31" selection-end-line="105" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/page/survey/my_survey.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2033">
+          <caret line="107" column="31" selection-start-line="107" selection-start-column="31" selection-end-line="107" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/page/user/register.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="13" column="77" selection-start-line="13" selection-start-column="77" selection-end-line="13" selection-end-column="77" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/page/chat/chat_to.vue">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="18" column="38" selection-start-line="18" selection-start-column="38" selection-end-line="18" selection-end-column="38" />
+          <folding>
+            <element signature="n#style#0;n#h1#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#router-link#1;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#2;n#div#0;n#div#1;n#li#0;n#div#2;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#div#3;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#3;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#1;n#div#3;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#4;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#4;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#4;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#div#0;n#div#4;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#5;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#div#5;n#div#0;n#template#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/store/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="25" column="31" selection-start-line="25" selection-start-column="31" selection-end-line="25" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/page/user/user.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1349">
+          <caret line="71" column="10" selection-start-line="71" selection-start-column="10" selection-end-line="71" selection-end-column="10" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#router-link#0;n#div#1;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h1#0;n#div#0;n#div#0;n#router-link#0;n#div#1;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/page/user/personal_space.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3002">
+          <caret line="158" column="21" selection-start-line="158" selection-start-column="21" selection-end-line="158" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/page/chat/chat.vue">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="307">
-          <caret line="202" column="14" selection-start-line="202" selection-start-column="14" selection-end-line="202" selection-end-column="14" />
+          <caret line="22" column="13" lean-forward="true" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+          <folding>
+            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -285,7 +285,6 @@ input:focus {
 @keyframes dis {
     0%{transform:scale(0.8);opacity: 0.5;height:20%;}
     100%{transform:scale(0.9);width:95%;opacity:0.8;}
-
 }
 #myForm input{
     position: relative;
@@ -297,6 +296,8 @@ input:focus {
     margin-top: 5px;
     font-size: 15px;
 }
+input,button,select,textarea
+{outline:none}
 #code_picture{
     width:42%;
     margin-left:8%;

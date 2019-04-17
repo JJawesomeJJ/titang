@@ -110,6 +110,10 @@
                 ,{emulateJSON: true}).then((res)=>{
                     console.log(res);
                     res=eval('('+res.bodyText+')');
+                    if(res.code=='600'){
+                        this.exit_login();
+                        return;
+                    }
                     if(res.data=="ok");
                     this.toast("创建成功");
                     this.title_name="扫码参与调查";
@@ -147,7 +151,16 @@
                 var get_data={
                     "type":"survey"
                 }
-                this.$http.get("http://39.108.236.127/php/admin/class/email_code_.php",{params:get_data}).then((res)=>{console.log(res);
+                this.$http.get("http://39.108.236.127/php/admin/class/email_code_.php",
+                    {params:get_data}).then((res)=>
+                {
+                    console.log(res);
+                    res=eval('('+res.bodyText+')');
+                    if(res.bodyText=='600')
+                    {
+                        this.exit_login();
+                        return;
+                    }
                 }).catch((exce)=>{
                     console.log(exce);
                 });

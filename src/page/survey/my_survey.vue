@@ -59,6 +59,10 @@
                     },{emulateJSON:true}).then((res)=>{
                         console.log(res);
                         res=eval('('+res.bodyText+')');
+                        if(res.code=='600')
+                        {
+                            this.exit_login();
+                        }
                         for(var i of res)
                         {
                             this.my_survey_list.push(i)
@@ -75,6 +79,9 @@
                     },{emulateJSON:true}).then((res)=>{
                     console.log(res);
                     res=eval('('+res.bodyText+')');
+                    if(res.code=='600'){
+                        this.exit_login();
+                    }
                     if(res.message=="ok"){
                         this.toast("已成功删除");
                         for(var i=0;i<this.my_survey_list.length;i++){
@@ -95,6 +102,11 @@
                     },{emulateJSON:true}).then((res)=>{
                     console.log(res);
                     res=eval('('+res.bodyText+')');
+                    if(res.code=='600')
+                    {
+                        this.exit_login();
+                        return;
+                    }
                     if(res.message=="ok"){
                         this.toast("回收成功,已关闭投票接口");
                         for(var i=0;i<this.my_survey_list.length;i++){

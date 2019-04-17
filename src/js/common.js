@@ -10,7 +10,6 @@ exports.install = function (Vue, options) {
     };
     Vue.prototype.exit_login=function () {
         this.setcookie('','',-1);
-        window.location.href = "#/user";
         if(typeof(websocket)!='undefined')
         {
             if(websocket.readyState==1)
@@ -18,6 +17,12 @@ exports.install = function (Vue, options) {
                 websocket.close();
             }
         }
+        localStorage.removeItem("server_token");
+        this.$http.get("http://39.108.236.127/php/public/index.php/user/logout").then((res) => {
+            this.is_login();
+        }).catch((res) => {
+            this.is_login();
+        });
     };
     Vue.prototype. setcookie=function(name, email, exdays) {
         if(document.cookie=="")
@@ -112,8 +117,6 @@ exports.install = function (Vue, options) {
                 for(var i in self.variate.online_list){
                     self.variate.name_list.push(i);
                 }
-                console.log(self.variate.online_list);
-                console.log(self.variate.name_list);
             }
             else{
                 alert(evt.data);
@@ -147,6 +150,7 @@ exports.install = function (Vue, options) {
     Vue.prototype.websocket=function(name)
     {
         var self=this;
+        self.request_connect_server();
         var web="ws://39.108.236.127:9502";
         window.websocket=new WebSocket(web);
         websocket.onopen=function (evt) {
@@ -154,17 +158,66 @@ exports.install = function (Vue, options) {
             websocket.send(JSON.stringify(
                 {
                     'username':name,
-                    'type':'init'
+                    'type':'init',
+                    'token_value':localStorage.getItem("server_token"),
                 }
             ));
         }
         websocket.onclose=function (evt) {
             console.log("关闭");
-            self.exit_login();
-            self.toast("异地登录,如不是本人操作请修改密码，或重新登录");
         }
         websocket.onmessage=function (evt) {
             var system_data=eval('(' + evt.data + ')');
+            console.log(system_data);
+            if(Array.isArray(system_data))
+            {
+                for(var i of system_data)
+                {
+                    switch (i.type.toString()) {
+                        case "alert":
+                            alert(i.message);
+                            break;
+                        case "notifycation_bar":
+                            break;
+                        case "other_commit":
+                            break;
+                        case "reply":
+                            self.$store.state.notify_list.push(i)
+                            break;
+                        default:
+                            break;
+                    }
+                }
+                return;
+            }
+            else {
+                var is_return=false;
+                switch (system_data["type"]) {
+                    case "alert":
+                        is_return=true;
+                        alert(system_data.message);
+                        break;
+                    case "notifycation_bar":
+                        is_return=true;
+                        break;
+                    case "other_commit":
+                        is_return=true;
+                        break;
+                    case "reply":
+                        self.$store.state.notify_list.push(system_data);
+                        is_return=true;
+                        break;
+                    case "close":
+                        alert(system_data["message"]);
+                        self.exit_login();
+                        break;
+                    default:
+                        break;
+                }
+                if(is_return) {
+                    return;
+                }
+            }
             if(system_data.type=='system')
             {
                 if(self.flag==null)
@@ -364,10 +417,24 @@ exports.install = function (Vue, options) {
                 timestamp=timestamp.toString().substring(0,timestamp.toString().length-3);
                 return timestamp;
             }
-            Vue.prototype.compress_img_base64=function(path, obj,quality){
+            Vue.prototype.request_connect_server=function() {
+                if (localStorage.getItem("server_token") == null) {
+                    this.$http.post("http://39.108.236.127/php/public/index.php/user/server").then(function (res) {
+                        var data = eval('(' + res.bodyText + ')');
+                        if (data.code == 200) {
+                            localStorage.setItem("server_token", data.server_token);
+                        } else {
+
+                        }
+                    }).catch(function (error) {
+                        console.log(error);
+                    }).bind(this);
+                }
+            }
+            Vue.prototype.compress_img_base64=function(path, obj,quality) {
                 var img = new Image();
                 img.src = path;
-                img.onload = function(){
+                img.onload = function () {
                     var that = this;
                     // 默认按比例压缩
                     var w = that.width,
@@ -389,13 +456,53 @@ exports.install = function (Vue, options) {
                     canvas.setAttributeNode(anh);
                     ctx.drawImage(that, 0, 0, w, h);
                     // 图像质量
-                    if(obj.quality && obj.quality <= 1 && obj.quality > 0){
+                    if (obj.quality && obj.quality <= 1 && obj.quality > 0) {
                         quality = obj.quality;
                     }
                     // quality值越小，所绘制出的图像越模糊
                     var base64 = canvas.toDataURL('image/jpeg', quality);
                     // 回调函数返回base64的值
                     return base64;
+                }
+            }
+    Vue.prototype.date_timestamp=function (time) {
+        var timestamp=new Date(time).getTime();
+        return timestamp.toString().substring(0,timestamp.toString().length-3);
+    }
+    Vue.prototype.get_time_different=function (endDate,startDate) {
+        var ms = endDate- startDate;
+        if (ms < 0) return 0;
+        if((ms/60/60)<24){
+        return (Number((ms/60/60).toFixed(0))+Number(1))+"小时以内";
+        }
+        else
+        {
+            (Number((ms/60/60/24).toFixed(0))+Number(1))+"天以前";
+        }
+    }
+    Vue.prototype.get_head_img=function (name1) {
+        if(localStorage.getItem(name1+"_head_img")==null)
+        {
+            var head_img;
+            $.ajax({
+                url : 'http://39.108.236.127/php/public/index.php/user/head_img',
+                type : 'get',
+                async: false,//使用同步的方式,true为异步方式
+                data : {  name:name1},//这里使用json对象
+                success : function(data){
+                    data=eval('('+data+')');
+                    console.log(data["head_img"]);
+                    localStorage.setItem(name1+"_head_img",data["head_img"]);
+                    head_img=data["head_img"];
+                },
+                fail:function(err){
+                    console.log(err);
+                }
+            });
+            return head_img;
+        }
+        else {
+            return localStorage.getItem(name1+"_head_img");
         }
     }
 };

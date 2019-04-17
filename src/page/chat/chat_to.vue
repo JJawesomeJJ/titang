@@ -8,8 +8,8 @@
         <div class="curtain"></div>
         <div id="chat_back">
             <li v-for="i in this.$store.state.chat_data">
-                <div class="left" v-if="i.name==name">
-                <div class="head_img"><img v-bind:src="head_img"></div>
+                <div class="left" v-if="i.name==name&&name!=null">
+                <div class="head_img"><img v-bind:src="get_head_img(name)"></div>
                 <div class="me_padding">
                     <img v-if="i.type=='image'" v-bind:src="i.message" @click="show_large(i.message)">
                     <p class="me" v-if="i.type=='text'">{{i.message}}</p>
@@ -17,7 +17,7 @@
                 </div>
                 <div class="right" v-else>
                     <div style="display: flex;">
-                        <div class="right_head_img"><img v-bind:src="head_img"></div>
+                        <div class="right_head_img"><img v-bind:src="get_head_img(my_name)"></div>
                     <div class="right_me_padding">
                             <img v-if="i.type=='image'" v-bind:src="i.message" @click="show_large(i.message)">
                         <p class="me_right" v-if="i.type=='text'">{{i.message}}</p>
@@ -74,7 +74,6 @@
             this.menu("iconfont.icon-sousuo");
             this.my_name=this.getCookie("name");
             this.is_websocket();
-            this.is_exist();
             this.name=this.$route.query.name;
             this.socket_id=this.$route.query.socket_id;
             this.load();
@@ -143,14 +142,6 @@
                         this.send_data();
                     }
                 }.bind(this);
-            },
-            is_exist() {
-                var url = "http://39.108.236.127/head_img/" + this.email + ".jpeg";
-                this.$http.get(url).then((res) => {
-                    this.head_img = url;
-                }).catch((res) => {
-                    this.head_img = "http://img3.imgtn.bdimg.com/it/u=3931249197,3470570548&fm=26&gp=0.jpg";
-                })
             },
             j_nav_dis() {
                 $(".j-nav-tail").slideUp(200);

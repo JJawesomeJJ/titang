@@ -1,14 +1,30 @@
 <template>
     <div class="container">
         <div class="title">
-            <div class="head_img"><img v-bind:src="head_img" style="width: 40px;height: 40px;border-radius: 50px;position: relative;top:5px;"></div>
+            <div class="head_img"><img v-bind:src="get_head_img(getCookie('name'))" style="width: 40px;height: 40px;border-radius: 50px;position: relative;top:5px;"></div>
             <h1>消息</h1>
-        </div>
+         </div>
         <div class="search"><input type="text" placeholder="搜索"></div>
+        <li v-for="i in $store.state.notify_list" v-if="i.type=='reply'" class="notify_list">
+                <div class="all">
+                    <div style="display: flex;">
+                    <div class="head_img"><img :src="i.message.head_img" style="width: 40px;height: 40px;border-radius: 50px;position: relative;top:5px;"></div>
+                    <div style="position:relative;top:0px;margin-left:0px;">
+                        <h1 style="font-size:20px;line-height:35px;">{{i.message.who}}</h1>
+                        <h1 style="color: black;line-height: 10px;font-weight: lighter;font-size: 15px;">{{i.message.reply_content}}</h1>
+                    </div>
+                    <div style="position:absolute;right: 20px;top:10px;text-align: center;">
+                        <h3 style="color:black;font-weight: lighter;">来自{{i.message.reply_source}}的回复</h3>
+                    </div>
+                    </div>
+                    <div style="width:60px;height: 100%;background-image: linear-gradient(90deg,#0af,#0085ff);position: absolute;right: -60px;z-index: 999;" @click="test()"><h1 style="color: white;font-weight: lighter;text-align: center;font-size: 15px;">置顶</h1></div>
+                    <div style="width:60px;height: 100%;background-image:linear-gradient(90deg,#FF5053,#FF3B30);position: absolute;right: -120px;"><h1  style="color: white;font-weight: lighter;text-align: center;font-size: 15px;">删除</h1></div>
+                </div>
+        </li>
         <li v-for="i in $store.state.name_list">
             <router-link :to="{path:'/chat_to',query:{name:i,socket_id:$store.state.socket_list[i]}}">
                 <div class="all">
-                    <div class="head_img"><img v-bind:src="head_img" style="width: 40px;height: 40px;border-radius: 50px;position: relative;top:5px;"></div>
+                    <div class="head_img"><img v-bind:src="get_head_img(i)" style="width: 40px;height: 40px;border-radius: 50px;position: relative;top:5px;"></div>
                     <div style="position:relative;top:0px;margin-left:0px;">
                         <h1 style="color: black;">{{i}}</h1>
                         <h2 style="display:none;"></h2>
@@ -29,6 +45,7 @@
         data(){
             return{
                 name:null,
+                list_is_move:false,
                 name_list:[],
                 socket_list:{},
                 head_img:null,
@@ -44,15 +61,23 @@
             }
         },
         created(){
-            this.is_login();
+            //this.is_login();
             this.menu("iconfont.icon-sousuo");
             this.name=this.getCookie("name");
-            this.is_websocket();
-            this.is_exist();
+            //this.is_websocket();
+        },
+        updated(){
+            //this.left_shift();
+        },
+        mounted(){
+          this.left_shift(".notify_list");
         },
         destroyed:function () {
         },
         methods:{
+            test(){
+              alert("test");
+            },
             is_exist(){
                 var url="http://39.108.236.127/head_img/"+this.email+".jpeg";
                 this.$http.get(url).then((res)=>{
@@ -79,6 +104,64 @@
                     }
                 }
             },
+            left_shift(element){
+                var list_is_move=false;
+                var move=false;
+                var is_move=false;
+                var startX;
+                var startY;
+                var moveEndY;
+                var moveEndX;
+                var X;
+                var Y;
+                $(element).on("touchstart", function(e) {
+                    //e.preventDefault();
+                    $(element).stop();
+                    $(element).css("left","0px");
+                    startX = e.originalEvent.changedTouches[0].pageX,
+                        startY = e.originalEvent.changedTouches[0].pageY;
+                });
+                $(element).on("touchmove", function(e) {
+                    //e.preventDefault();
+                    moveEndX = e.originalEvent.changedTouches[0].pageX;
+                    moveEndY = e.originalEvent.changedTouches[0].pageY;
+                    X = moveEndX - startX;
+                    Y = moveEndY - startY;
+                    if(X>0)
+                    {
+                        move="right";
+                        var left = $(this).css("left");
+                        left = left.substring(0, left.length - 2);
+                        left=Number(left)+X;
+                        if(left<=0){
+                            $(this).css("left",left+"px");
+                        }
+                    }
+                    if(X<0){
+                        move="left";
+                        if(X<0&&X>-120)
+                        {
+                            $(this).css("left",X+"px");
+                        }
+                    }
+                });
+                $(element).on("touchend",function (e) {
+                    if(move=="left") {
+                        var left = $(this).css("left");
+                        left = left.substring(0, left.length - 2);
+                        if (Math.abs(left) > 40) {
+                            $(this).animate({"left": "-120px"});
+                        } else {
+                            $(this).animate({"left": "0px"});
+                        }
+                    }
+                    if(move=="right")
+                    {
+                        $(this).animate({"left": "0px"});
+                    }
+                });
+
+            }
         }
     }
 </script>
@@ -89,6 +172,7 @@
     height: 100%;
     position: relative;
     top:0px;
+    overflow: hidden;
 }
     .title{
         display:flex;
