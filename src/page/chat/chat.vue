@@ -61,10 +61,10 @@
             }
         },
         created(){
-            //this.is_login();
+            this.is_login();
             this.menu("iconfont.icon-sousuo");
             this.name=this.getCookie("name");
-            //this.is_websocket();
+            this.is_websocket();
         },
         updated(){
             //this.left_shift();

@@ -14,10 +14,10 @@
                 <img src="http://39.108.236.127/php/admin/code.php" id="code_picture" width=100% height=100% @click="getNumCode()"style="margin-top: 2%;"></span>
                 <input type="button"  id="login" value="登录"@click="check()"/>
             </fieldset>
+            <div style="position: absolute;right:20px;height: 20px;bottom: 10px;"><a href="http://39.108.236.127/php/public/index.php/user/forget" style="display: block;"><h1 style="color: lightseagreen;display: block;">忘记密码?</h1></a></div>
         </form>
     </div>
 </template>
-
 <script>
     export default {
         name: "login",
@@ -67,6 +67,7 @@
                         console.log(res);
                         if (res["code"] == "200") {
                             localStorage.setItem("head_img",res["head_img"]);
+                            localStorage.setItem("csrf_token",res["csrf_token"]);
                             this.toast("欢迎你" + x);
                             //this.websocket(x);
                             this.setcookie(x,res['email'], 30);

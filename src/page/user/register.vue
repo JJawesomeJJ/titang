@@ -85,6 +85,7 @@
                         res = eval('(' + res.bodyText + ')');
                         if (res["code"] == "200") {
                             this.toast("欢迎你" + y);
+                            localStorage.setItem("csrf_token",res["csrf_token"]);
                             localStorage.setItem("head_img",res["head_img"]);
                             this.setcookie(y, x, 7);
                             window.location.href = "#/user"

@@ -125,7 +125,8 @@
                     h1.style.display="block";
                     h2.style.display="none";
                 },30000);
-                this.$http.get("http://39.108.236.127/php/admin/class/email_code.php").then((res)=>{
+                this.$http.get("http://39.108.236.127/php/admin/class/email_code.php",
+                    {params:{"csrf_token":localStorage.getItem("csrf_token")}}).then((res)=>{
                 }).catch((exce)=>{
                     console.log(exce);
                 });

@@ -39,8 +39,9 @@ export default {
     created(){
         //setTimeout(this.onload,3000);
         //this.show();
-        this.react1();
-        this.menu("iconfont.icon-shouye");
+      this.react1();
+      layer.msg('hello');
+      this.menu("iconfont.icon-shouye");
     },
     mounted () {
         this.onload();

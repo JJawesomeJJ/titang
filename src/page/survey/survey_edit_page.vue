@@ -105,7 +105,8 @@
                         "type":"create",
                         "question_arr":qustion_list,
                         "title":this.title,
-                        "code":this.code
+                        "code":this.code,
+                        "csrf_token":localStorage.getItem("csrf_token")
                     }
                 ,{emulateJSON: true}).then((res)=>{
                     console.log(res);
@@ -149,10 +150,13 @@
                     self.word="已发送"+"("+total+")";
                 },1000);
                 var get_data={
-                    "type":"survey"
+                    "type":"survey",
+                    "csrf_token":localStorage.getItem("csrf_token")
                 }
                 this.$http.get("http://39.108.236.127/php/admin/class/email_code_.php",
-                    {params:get_data}).then((res)=>
+                    {
+                        params:get_data
+                    }).then((res)=>
                 {
                     console.log(res);
                     res=eval('('+res.bodyText+')');

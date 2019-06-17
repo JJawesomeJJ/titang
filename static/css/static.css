@@ -281,6 +281,7 @@ input:focus {
     position: relative;
     margin: 0 auto;
     animation:dis 0.5s ease-in-out normal;
+    min-height: 290px;
 }
 @keyframes dis {
     0%{transform:scale(0.8);opacity: 0.5;height:20%;}
@@ -317,12 +318,13 @@ input,button,select,textarea
     #myForm{
         width:90%;
         min-width:200px;
+        min-height: 250px;
     }
     .iconfont{
         font-size: 40px;
     }
     .j-container{
-        background: url("http://img.jcwcn.com/attachment/forum/201205/20/172318gogu09f2gf33cmoo.jpg");
+        background: url("https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2310012610,2816583912&fm=15&gp=0.jpg");
         background-size: 100% 100%;
     }
     .j-other{

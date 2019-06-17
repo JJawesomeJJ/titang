@@ -96,13 +96,13 @@
         position: relative;
         width: 100%;
     }
-.head{
-    position: relative;
-    top:0px;
-    width: 100%;
-    height:150px;
-    background-image: linear-gradient(90deg,#0af,#0085ff);
-}
+    .head{
+        position: relative;
+        top:0px;
+        width: 100%;
+        height:150px;
+        background-image: linear-gradient(90deg,#0af,#0085ff);
+    }
     .title{
         position: relative;
         width: 100%;

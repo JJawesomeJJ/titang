@@ -18,7 +18,8 @@ exports.install = function (Vue, options) {
             }
         }
         localStorage.removeItem("server_token");
-        this.$http.get("http://39.108.236.127/php/public/index.php/user/logout").then((res) => {
+        this.$http.get("http://39.108.236.127/php/public/index.php/user/logout",{params:{csrf_token:localStorage.getItem("csrf_token")}}).then((res) => {
+            localStorage.removeItem("csrf_token");
             this.is_login();
         }).catch((res) => {
             this.is_login();
@@ -168,21 +169,48 @@ exports.install = function (Vue, options) {
         }
         websocket.onmessage=function (evt) {
             var system_data=eval('(' + evt.data + ')');
-            console.log(system_data);
             if(Array.isArray(system_data))
             {
+                console.log("is_array");
                 for(var i of system_data)
                 {
                     switch (i.type.toString()) {
                         case "alert":
                             alert(i.message);
                             break;
-                        case "notifycation_bar":
+                        case "text":
+                            layer.msg({
+                                title:i.title,
+                                type: 1,
+                                content:system_data["content"]
+                            });
+                            break;
+                        case "html":
+                            layer.open({
+                                title:i.title,
+                                type: 1,
+                                content:system_data["content"]
+                            });
+                            break;
+                        case "msg":
+                            layer.open({
+                                title:i.title,
+                                type: 1,
+                                content:system_data["content"]
+                            });
+                            break;
+                        case "window":
+                            layer.open({
+                                title:i.title,
+                                type: 1,
+                                offset: 't',
+                                content:system_data["content"]
+                            });
                             break;
                         case "other_commit":
                             break;
                         case "reply":
-                            self.$store.state.notify_list.push(i)
+                            self.$store.state.notify_list.push(i);
                             break;
                         default:
                             break;
@@ -191,14 +219,24 @@ exports.install = function (Vue, options) {
                 return;
             }
             else {
+                if(typeof(system_data)=="string") {
+                    system_data = eval('(' + system_data + ')');
+                    console.log(system_data);
+                    console.log("obejct");
+                }
                 var is_return=false;
                 switch (system_data["type"]) {
                     case "alert":
                         is_return=true;
-                        alert(system_data.message);
+                        alert(system_data.content);
                         break;
-                    case "notifycation_bar":
-                        is_return=true;
+                    case "window":
+                        layer.open({
+                            title:system_data["title"],
+                            type: 1,
+                            offset: 't',
+                            content:system_data["content"]
+                        });
                         break;
                     case "other_commit":
                         is_return=true;
@@ -213,9 +251,6 @@ exports.install = function (Vue, options) {
                         break;
                     default:
                         break;
-                }
-                if(is_return) {
-                    return;
                 }
             }
             if(system_data.type=='system')
@@ -419,7 +454,10 @@ exports.install = function (Vue, options) {
             }
             Vue.prototype.request_connect_server=function() {
                 if (localStorage.getItem("server_token") == null) {
-                    this.$http.post("http://39.108.236.127/php/public/index.php/user/server").then(function (res) {
+                    this.$http.post("http://39.108.236.127/php/public/index.php/user/server",
+                        {
+                            csrf_token: localStorage.getItem("csrf_token")
+                        },{emulateJSON: true}).then(function (res) {
                         var data = eval('(' + res.bodyText + ')');
                         if (data.code == 200) {
                             localStorage.setItem("server_token", data.server_token);

@@ -136,7 +136,7 @@
                 $(".back").css("display","none");
             },
             get_content(url) {
-                var url1='http://39.108.236.127/php/api/news.php?url='+url.replace(/&/g,'*');
+                var url1='http://39.108.236.127/php/public/index.php/post/news?url='+url.replace(/&/g,'*');
                 this.$http.jsonp(url1, {
                     jsonpCallback: "callback",
                 }).then(function (res) {
@@ -152,7 +152,7 @@
                     url:this.url
                 }
                 this.$http.get(url,{
-                    params:senddata
+                    params:senddata,
                 }).then(function (res) {
                     var comment_list=eval('('+res.bodyText+')');
                     for(var i=0;i<comment_list.length;i++)
@@ -201,10 +201,11 @@
                 var sendata={
                     "comment":com,
                     "url":this.url,
+                    csrf_token:localStorage.getItem("csrf_token")
                 }
                 this.comment=[]
                 this.$http.get(url,{
-                    params:sendata
+                    params:sendata,
                 }).then(function (res) {
                     if(res.body.code=='200')
                     {
@@ -307,7 +308,8 @@
                             reply_id:this.reply_id,
                             url:this.url,
                             full_url:window.location.href.split("news_content?")[1],
-                            head_img:this.head_img
+                            head_img:this.head_img,
+                            csrf_token:localStorage.getItem("csrf_token"),
                         },
                         {emulateJSON: true}).then(function (res) {
                         var res=eval('('+res.bodyText+')');

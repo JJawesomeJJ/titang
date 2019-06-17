@@ -100,13 +100,13 @@ $(document).ready(function () {
     function download_background_url() {
         $.ajax({
             type:'get',
-            url:"http://39.108.236.127/php/api/update_background.php",
+            url:"http://39.108.236.127/php/public/index.php/admin/theme/get",
             data:{"type":"get_theme_back"},
             dataType: "jsonp",
             jsonp: 'callback',
             jsonpCallback: "callback",
             success:function(json) {
-                var list_data=json.list.split(";");
+                var list_data=json;
                 var list={
                     "night":list_data[0],
                     "sunrise":list_data[1],
@@ -167,7 +167,7 @@ $(document).ready(function () {
     function is_update() {
         $.ajax({
             type:'get',
-            url:"http://39.108.236.127/php/api/update_background.php",
+            url:"http://39.108.236.127/php/public/index.php/admin/theme/get",
             data:{"type":"get_version"},
             dataType: "jsonp",
             jsonp: 'callback',

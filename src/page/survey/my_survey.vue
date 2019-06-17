@@ -55,7 +55,8 @@
             get_data(){
                 this.$http.post("http://39.108.236.127/php/public/index.php/survey/query",
                     {
-                        "type":"get_my_survey"
+                        "type":"get_my_survey",
+                        "csrf_token":localStorage.getItem("csrf_token")
                     },{emulateJSON:true}).then((res)=>{
                         console.log(res);
                         res=eval('('+res.bodyText+')');
@@ -75,7 +76,8 @@
                 this.$http.post("http://39.108.236.127/php/public/index.php/survey/delete",
                     {
                         "type":"delete",
-                        "name":name
+                        "name":name,
+                        "csrf_token":localStorage.getItem("csrf_token")
                     },{emulateJSON:true}).then((res)=>{
                     console.log(res);
                     res=eval('('+res.bodyText+')');
@@ -98,7 +100,8 @@
                 this.$http.post("http://39.108.236.127/php/public/index.php/survey/draw",
                     {
                         "type":"draw",
-                        "name":name
+                        "name":name,
+                        "csrf_token":localStorage.getItem("csrf_token")
                     },{emulateJSON:true}).then((res)=>{
                     console.log(res);
                     res=eval('('+res.bodyText+')');

@@ -94,7 +94,6 @@ export default new Router({
           path:'/my_survey',
           name:'my_survey',
           component:my_survey
-      }
-
+      },
   ]
 });
